@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<title>Portfolio Asma</title>
+<link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/102598292?v=4">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <section>
+      <div class="icon-container">
+        <div class="icon-box about" data-modal="about" >
+          <img src="https://icon-library.com/images/about-me-icon/about-me-icon-1.jpg">
+              </div>
+        <div class="icon-box projects" data-modal="projects" >
+          <img src="https://static.thenounproject.com/png/3475197-200.png">
+        </div>
+        <div class="icon-box testimonial" data-modal="testimonial" >
+          <img src="https://cdn-icons-png.flaticon.com/512/3171/3171593.png" alt="">
+        </div>
+        <div class="icon-box education" data-modal="educations">
+          <img src="https://cdn-icons-png.flaticon.com/512/2153/2153317.png" alt="">        
+        </div>
+        <div class="icon-box contact" data-modal="contact">
+          <img src="https://icons.veryicon.com/png/o/education-technology/ui-icon/contacts-77.png" alt="">        
+        </div>
+      </div>
+    </section>
+
+    <div class="popup" id="about">
+      <div class="popup-container">
+        <div class="popup-header">
+            <div id="language-toggle">
+              <button id="langue" onclick="switchLanguage()">
+                <span id="current-language" hidden>French</span>
+                <img id="language-flag" src="https://www.drapeauxdespays.fr/data/flags/emoji/twitter/256x256/fr.png" alt="English Flag">
+            </button>
+            </div>
+
+              
+        </div>
+        <div class="popup-body about-container">
+          <div class="img-frame">
+            <img src="https://avatars.githubusercontent.com/u/102598292?v=4" alt="" />
+          </div>
+          <div class="hero-content" data-lang="en">
+            <h1>Asma MOUGNI</h1>
+            <p>
+              Passionate about computer science and programming, my goal is to specialize in Artificial Intelligence and Big Data Analysis. With a strong command of programming languages such as Python and Java, as well as a deep understanding of computer concepts, my motivation lies in solving complex problems and contributing to innovative solutions in the field of computer science.            </p>
+          </div>
+          <div class="hero-content" data-lang="fr" style="display:none;">
+            <h1>Asma MOUGNI</h1>
+            <p>
+              Passionnée par l'informatique et la programmation, mon objectif est de me spécialiser en Intelligence Artificielle et Analyse des Big Data. Ayant acquis une solide maîtrise des langages de programmation tels que Python et Java, ainsi qu'une compréhension approfondie des concepts informatiques, ma motivation réside dans la résolution de problèmes complexes et dans la contribution à des solutions novatrices dans le domaine de l'informatique.            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="projects">
+      <div class="popup-container">
+        <div class="popup-header">
+
+        </div>
+
+        <div class="popup-body">
+          <div class="skill-list" data-lang="en">
+            <h1>Skills</h1>
+            <center><h2 >Frontend Development</h2></center>
+            <ul class="frontend">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>Vue JS</li>
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+                <li>Angular</li>
+            </ul>
+            
+            <center><h2 >Backend Development</h2></center>
+            <ul class="backend">
+                <li>Laravel / Symfony</li>
+                <li>Java</li>
+                <li>NodeJS</li>
+                <li>PHP</li>
+            </ul>
+            
+            <center><h2 >Database Management</h2></center>
+            <ul class="database">
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>MariaDB</li>
+                <li>MySQL</li>
+            </ul>
+            
+            <center><h2 >Programming Languages</h2></center>
+            <ul class="programming">
+                <li>C / C++</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    
+            
+          <div class="skill-list" data-lang="fr" data-lang="en" style="display:none;">
+              <h1>Compétences</h1>
+              <center><h2 >Frontend Development</h2></center>
+              <ul class="frontend">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Javascript</li>
+                  <li>React</li>
+                  <li>Vue JS</li>
+                  <li>Bootstrap</li>
+                  <li>Tailwind CSS</li>
+                  <li>Angular</li>
+              </ul>
+              
+              <center><h2 >Backend Development</h2></center>
+              <ul class="backend">
+                  <li>Laravel / Symfony</li>
+                  <li>Java</li>
+                  <li>NodeJS</li>
+                  <li>PHP</li>
+              </ul>
+              
+              <center><h2 >Base de Donnée</h2></center>
+              <ul class="database">
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                  <li>MariaDB</li>
+                  <li>MySQL</li>
+              </ul>
+              
+              <center><h2 >Langage de Programation</h2></center>
+              <ul class="programming">
+                  <li>C / C++</li>
+                  <li>Python</li>
+              </ul>
+          </div>
+
+          <div class="project-container">
+            <h1>Projects</h1>
+            <div class="all-projects">
+              <div class="project-box">
+                <img
+                  src="assets/projet2.png"
+                  alt="Projet_Pokedex" />
+                <div class="overlay">
+                  <h3>Pokedex</h3>
+                  <button class="more-btn">
+                    <span><a href="https://github.com/Ikeepmyideas/Pokedex">Learn More</a></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="assets/projet3.png"
+                  alt="SeniorCare" />
+                <div class="overlay">
+                  <h3>SeniorCare</h3>
+                  <button class="more-btn">
+                    <span><a href="https://github.com/khaoula-che/Projet_c">Learn More</a></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="assets/projet4.png"
+                  alt="Au_Temps_Donné" />
+                <div class="overlay">
+                  <h3>Au Temps Donné</h3>
+                  <button class="more-btn">
+                    <span><a href="https://github.com/Ikeepmyideas/Au-Temps-Donne">Learn More</a></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="assets/projet5.png"
+                  alt="Gymlight" />
+                <div class="overlay">
+                  <h3>Gymlight</h3>
+                  <button class="more-btn">
+                    <span><a href="https://github.com/Ikeepmyideas/Gymlight">Learn More</a></span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-box">
+                <img
+                  src="assets/projet7.png"
+                  alt="Blender" />
+                <div class="overlay">
+                  <h3>Animation Blender</h3>
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="testimonial">
+      <div class="popup-container">
+        <div class="popup-header">
+
+        </div>
+        <div class="popup-body testimonial-container">
+          <h1 data-lang="en">Testimonials</h1>
+          <h1 data-lang="fr">Temoignages</h1>
+
+
+          <div class="slider-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" data-lang="fr">
+                  <div class="user-info">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6213/6213479.png" alt="" />
+                    <h2>René PANIAGUA</h2>
+                  </div>
+                  <p>
+                    En tant que développeur web senior chez Architoi, j'ai eu l'occasion de travailler avec Asma et elle a 
+                    une bonne capacité à apprendre rapidement.
+                    Je recommande Asma en tant que développeur web. Elle est capable de s'adapter rapidement à de 
+                    nouvelles technologies et à de nouveaux environnements de travail. Elle serait un atout précieux pour 
+                    toute équipe de développement web
+                  </p>
+                </div>
+                <div class="swiper-slide" data-lang="en">
+                  <div class="user-info">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6213/6213479.png" alt="" />
+                    <h2>René PANIAGUA</h2>
+                  </div>
+                  <p>
+                    
+As a senior web developer at Architoi, I had the opportunity to work with Asma, and she has a good ability to learn quickly. I recommend Asma as a web developer. She is capable of quickly adapting to new technologies and work environments. She would be a valuable asset to any web development team.
+                  </p>
+                </div>
+                <div class="swiper-slide" data-lang="fr" style="display:none;">
+                  <div class="user-info">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/4042/4042422.png"
+                      alt="" />
+                    <h2>Thiviya SELLIAH</h2>
+                  </div>
+                  <p>
+                    Asma se distingue par sa rapidité d'apprentissage et sa passion pour le développement. Sa détermination à rester concentrée sur un problème jusqu'à trouver une solution témoigne de son engagement et de sa motivation profonde. Sa capacité à maîtriser rapidement de nouvelles technologies enrichit significativement nos projets. Collaborer avec elle est une expérience positive, marquée par son énergie et sa persévérance.                  </p>
+                </div>
+
+                <div class="swiper-slide" data-lang="en">
+                  <div class="user-info">
+                    <img
+                    src="https://cdn-icons-png.flaticon.com/512/4042/4042422.png"
+                    alt="" />
+                    <h2>Thiviya SELLIAH</h2>
+                  </div>
+                  <p>
+                    Asma excels in learning quickly and has a strong passion for development. Her determination to focus on a problem until finding a solution demonstrates her commitment and motivation. She quickly masters new technologies, enriching our projects significantly. Her enthusiasm motivates the team to strive for excellence. Collaborating with her has been a positive experience, marked by her energy and perseverance.                  </p>
+                </div> 
+                <div class="swiper-slide" data-lang="fr" style="display:none;">
+                  <div class="user-info">
+                    <img
+                      src="https://cdn0.iconfinder.com/data/icons/startup-and-new-business-3/24/developer-woman-512.png"
+                      alt="" />
+                    <h2>Khaoula CHETIOUI</h2>
+                  </div>
+                  <p>
+                    En tant que collègue de projet, j'ai eu le plaisir de collaborer sur plusieurs projets avec Asma. Elle est sérieuse dans son travail et possède un engagement remarquable envers ses tâches. De plus, elle excelle également dans la résolution de problèmes et la gestion de projets. Elle serait un atout précieux pour toute équipe.
+                  </p>
+                </div>
+
+                <div class="swiper-slide" data-lang="en">
+                  <div class="user-info">
+                    <img
+                    src="https://cdn0.iconfinder.com/data/icons/startup-and-new-business-3/24/developer-woman-512.png"
+                    alt="" />
+                    <h2>Khaoula CHETIOUI</h2>
+                  </div>
+                  <p>
+                    As a project colleague, I had the pleasure of collaborating on several projects with Asma. She is serious about her work and has remarkable commitment to her tasks. Additionally, she also excels in problem solving and project management. She would be a valuable element to any team.                  </p>
+                </div>
+                <div class="swiper-slide" data-lang="fr" style="display:none;">
+                  <div class="user-info">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/4042/4042422.png"
+                      alt="" />
+                    <h2>Anonyme</h2>
+                  </div>
+                  <p>
+                    Asma est passionnée par le domaine de la data. Sa détermination et sa capacité à résoudre des problèmes en équipe font d'elle une candidate idéal pour explorer les vastes possibilités offertes par les données.
+                  </p>
+                </div>
+
+                <div class="swiper-slide" data-lang="en">
+                  <div class="user-info">
+                    <img
+                    src="https://cdn-icons-png.flaticon.com/512/4042/4042422.png"
+                    alt="" />
+                    <h2>Anonymous</h2>
+                  </div>
+                  <p>
+                    Asma is passionate about the field of data. Her determination and ability to solve problems as part of a team make her an ideal candidate to explore the vast opportunities offered by data.
+                  </p>
+                </div>
+              </div>
+              <ul class="control" id="custom-control">
+                <li class="prev">
+                  <i class="fas fa-caret-left"></i>
+                </li>
+                <li class="next">
+                  <i class="fas fa-caret-right"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="popup" id="educations">
+      <div class="popup-container">
+        <div class="popup-header">
+          
+        </div>
+
+        <div class="popup-body">
+          <center><h1>Formation</h1></center>
+
+          <div class="d-flex flex-column education-main w-100">
+            <div
+              class="d-flex flex-column flex-md-row align-items-center education-wrap"
+            >
+
+      
+              <div class="eduction-detail w-100">
+                <div
+                  class="d-flex flex-column flex-md-row align-items-center justify-content-between eduction-detail-head"
+                >
+                  <h5 class="eduction-detail-heading">
+                    Bachelor                  </h5>
+                  <p class="eduction-detail-years">2022-Aujourd'hui</p>
+                </div>
+                <p class="eduction-detail-text">ESGI Paris</p>
+                <p class="eduction-detail-per">Chef de projet logiciel et Réseau</p>
+              </div>
+            </div>
+            <div
+              class="d-flex flex-column flex-md-row align-items-center education-wrap"
+            >
+
+      
+              <div class="eduction-detail w-100">
+                <div
+                  class="d-flex flex-column flex-md-row align-items-center justify-content-between eduction-detail-head"
+                >
+                  <h5 class="eduction-detail-heading">Classe Préparatoire Scientifique</h5>
+                  <p class="eduction-detail-years">2021-2022</p>
+                </div>
+                <p class="eduction-detail-text">
+                  ESIEA Ivry-sur-seine
+                </p>
+                <p class="eduction-detail-per">Mathématique, Physique, Informatique</p>
+              </div>
+            </div>
+            <div
+              class="d-flex flex-column flex-md-row align-items-center education-wrap"
+            >
+
+      
+              <div class="eduction-detail w-100">
+                <div
+                  class="d-flex flex-column flex-md-row align-items-center justify-content-between eduction-detail-head"
+                >
+                  <h5 class="eduction-detail-heading">
+                    Baccalauréat Général Scientifique                   </h5>
+                  <p class="eduction-detail-years">2021</p>
+                </div>
+                <p class="eduction-detail-text">
+                  Académie de Versailles                </p>
+                <p class="eduction-detail-per">Mathématique, Physique-Chimie, Science de la Vie et de la Terre</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="project-container">
+            <h1>Certifications</h1>
+            <div class="all-projects">
+              <div class="project-box">
+                <img
+                  src="assets/certif1.png"
+                  alt="Projet_Pokedex" />
+                <div class="overlay">
+                  <h3>Watsonx.ai</h3>
+                  <button class="more-btn">
+                    <span><a href="https://www.credly.com/badges/57e17b76-7f0e-4e90-ba60-454aac331428/public_url">Learn More</a></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="assets/certif2.png"
+                  alt="SeniorCare" />
+                <div class="overlay">
+                  <h3>Watsonx.ai Technical</h3>
+                  <button class="more-btn">
+                    <span><a href="https://www.credly.com/badges/9b36701d-c515-4f36-a27e-869dcafd191b/public_url">Learn More</a></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="assets/certif3.png"
+                  alt="Au_Temps_Donné" />
+                <div class="overlay">
+                  <h3>Watsonx.data</h3>
+                  <button class="more-btn">
+                    <span><a href="https://www.credly.com/badges/8136e90d-cc5b-436c-91b8-051043ed2c73/public_url">Learn More</a></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="assets/certif4.png"
+                  alt="Gymlight" />
+                <div class="overlay">
+                  <h3>Watsonx.data<br> Technical</h3>
+                  <button class="more-btn">
+                    <span><a href="https://www.credly.com/badges/af27e1ca-2628-4985-aa83-09563e295c0d/public_url">Learn More</a></span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-box">
+                <img
+                  src="assets/certif5.png"
+                  alt="Blender" />
+                <div class="overlay">
+                  <h3>Watsonx.gouvernance</h3>
+                  <button class="more-btn">
+                    <span><a href="https://www.credly.com/badges/c1ba2258-1282-4ec7-bb65-15f8546ef70b/public_url">Learn More</a></span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-box">
+                <img
+                  src="https://media.licdn.com/dms/image/C560BAQG8wr1PJuA-qw/company-logo_100_100/0/1630587150189/educational_testing_service_ets_logo?e=2147483647&v=beta&t=cNTFrtW-BwY5OB6WvBKAVLINupDlDwgWhde880I6YT0"
+                  alt="Blender" />
+                <div class="overlay">
+                  <h3>TOEIC : 800</h3>
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="popup" id="contact">
+      <div class="popup-container">
+        <div class="popup-header">
+    
+        </div>
+        <div class="popup-body contact-container">
+          <h1 data-lang="en">Contact</h1>
+          <h1 data-lang="fr" style="display:none;">Contactez-moi</h1>
+          <p data-lang="en">Hi there, you can contact with me via email.</p>
+          <p data-lang="fr" style="display:none;">Bonjour, vous pouvez me contacter par email ou encore LinkedIn.</p>
+          <div class="social-buttons">
+            <a href="https://www.linkedin.com/in/asma-m-685793223" class="social-button social-button--linkedin" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Ikeepmyideas" class="social-button social-button--github" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.kaggle.com/asmamo" class="social-button social-button--kaggle">
+              <i class="fab fa-kaggle"></i>
+            </a>
+            <a href="mailto:amougni1@myges.fr" class="social-button social-button--email" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+              </a>
+              <a href="pdf/CV-MOUGNI-Asma.pdf" class="social-button social-button--resume">CV<i class="fas fa-address-book"></i></a>
+          </div>  
+          <H2 data-lang="en">Thank you for your time.</h2>
+          <H2 data-lang="fr" style="display:none;">Merci pour votre temps.</h2>      
+            <img class="bye" width="250px" src="https://blog.amazingtalker.com/wp-content/uploads/2022/10/anime-bye-bye-yugi-amane.gif" alt="">  
+        </div>
+      </div>
+    </div>
+    
+  </body>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script/portfolio.js"></script>
+
+  
+
+</html>
