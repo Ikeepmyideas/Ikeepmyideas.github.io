@@ -1,3 +1,18 @@
+        function getVisitorCount() {
+          const count = localStorage.getItem('visitorCount');
+          return count ? parseInt(count) : 0;
+      }
+
+      function updateVisitorCount() {
+          let count = getVisitorCount();
+          count++;
+          localStorage.setItem('visitorCount', count);
+          document.getElementById('visitorCount').textContent = count;
+      }
+
+      updateVisitorCount();
+      
+
 document.addEventListener("DOMContentLoaded", function() {
     const languageButton = document.getElementById("langue");
 
